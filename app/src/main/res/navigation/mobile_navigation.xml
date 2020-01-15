@@ -12,15 +12,15 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.raminarmanfar.personalgermanlearning.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_herr_professor"
+        android:name="com.raminarmanfar.personalgermanlearning.ui.gallery.HerrProfessorListFragment"
+        android:label="@string/menu_herr_professor"
+        tools:layout="@layout/fragment_herr_professor_list" />
 
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.raminarmanfar.personalgermanlearning.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:label="@string/menu_personal_dictionary"
         tools:layout="@layout/fragment_slideshow" />
 
     <fragment

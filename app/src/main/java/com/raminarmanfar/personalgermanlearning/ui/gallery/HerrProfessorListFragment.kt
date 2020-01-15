@@ -10,7 +10,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.raminarmanfar.personalgermanlearning.R
 
-class GalleryFragment : Fragment() {
+class HerrProfessorListFragment : Fragment() {
 
     private lateinit var galleryViewModel: GalleryViewModel
 
@@ -21,8 +21,8 @@ class GalleryFragment : Fragment() {
     ): View? {
         galleryViewModel =
             ViewModelProviders.of(this).get(GalleryViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_gallery, container, false)
-        val textView: TextView = root.findViewById(R.id.text_gallery)
+        val root = inflater.inflate(R.layout.fragment_herr_professor_list, container, false)
+        val textView: TextView = root.findViewById(R.id.text_herr_professor)
         galleryViewModel.text.observe(this, Observer {
             textView.text = it
         })
