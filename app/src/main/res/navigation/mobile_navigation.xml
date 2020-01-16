@@ -12,16 +12,16 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_herr_professor"
-        android:name="com.raminarmanfar.personalgermanlearning.ui.gallery.HerrProfessorListFragment"
-        android:label="@string/menu_herr_professor"
+        android:id="@+id/nav_herr_professor_list"
+        android:name="com.raminarmanfar.personalgermanlearning.ui.herrProfessorList.HerrProfessorListFragment"
+        android:label="@string/menu_herr_professor_list"
         tools:layout="@layout/fragment_herr_professor_list" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.raminarmanfar.personalgermanlearning.ui.slideshow.SlideshowFragment"
+        android:id="@+id/nav_personal_dictionary"
+        android:name="com.raminarmanfar.personalgermanlearning.ui.persoanlDictionary.PersonalDictionaryFragment"
         android:label="@string/menu_personal_dictionary"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_personal_dictionary" />
 
     <fragment
         android:id="@+id/nav_tools"
@@ -30,14 +30,23 @@
         tools:layout="@layout/fragment_tools" />
 
     <fragment
-        android:id="@+id/nav_share"
-        android:name="com.raminarmanfar.personalgermanlearning.ui.share.ShareFragment"
-        android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
-
-    <fragment
         android:id="@+id/nav_send"
         android:name="com.raminarmanfar.personalgermanlearning.ui.send.SendFragment"
         android:label="@string/menu_send"
         tools:layout="@layout/fragment_send" />
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.raminarmanfar.personalgermanlearning.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.raminarmanfar.personalgermanlearning.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.raminarmanfar.personalgermanlearning.ui.about.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about" />
 </navigation>

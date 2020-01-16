@@ -1,4 +1,4 @@
-package com.raminarmanfar.personalgermanlearning.ui.gallery
+package com.raminarmanfar.personalgermanlearning.ui.herrProfessorList
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -12,18 +12,18 @@ import com.raminarmanfar.personalgermanlearning.R
 
 class HerrProfessorListFragment : Fragment() {
 
-    private lateinit var galleryViewModel: GalleryViewModel
+    private lateinit var herrProfessorListViewModel: HerrProfessorListViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        galleryViewModel =
-            ViewModelProviders.of(this).get(GalleryViewModel::class.java)
+        herrProfessorListViewModel =
+            ViewModelProviders.of(this).get(HerrProfessorListViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_herr_professor_list, container, false)
-        val textView: TextView = root.findViewById(R.id.text_herr_professor)
-        galleryViewModel.text.observe(this, Observer {
+        val textView: TextView = root.findViewById(R.id.text_herr_professor_list)
+        herrProfessorListViewModel.text.observe(this, Observer {
             textView.text = it
         })
         return root

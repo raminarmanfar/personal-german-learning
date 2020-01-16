@@ -9,9 +9,9 @@
             android:icon="@drawable/ic_menu_home"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_herr_professor"
+            android:id="@+id/nav_herr_professor_list"
             android:icon="@drawable/ic_menu_herr_professor"
-            android:title="@string/menu_herr_professor" />
+            android:title="@string/menu_herr_professor_list" />
         <item
             android:id="@+id/nav_personal_dictionary"
             android:icon="@drawable/ic_menu_personal_dictionary"
